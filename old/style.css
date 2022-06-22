@@ -1,0 +1,81 @@
+body{
+    font-size: 1em;
+    font-family: 'Josefin Sans';
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* FONT */ 
+
+.Josefin{
+    font-family: 'josefin sans';
+}
+.white{
+    color: white;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    background: linear-gradient(180deg, #090909 0%, #282323 100%);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    min-height: 6rem;
+}
+
+header div.head{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+header div.head span {
+    color: #73C0D7;
+}
+header div.logo{
+    margin-left: 3%;
+}
+header div.navig{
+    width: 27%;
+}
+header div.login{
+    width: 35%;
+}
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
+div.login{
+    margin-left: 10%;
+}
+div.login p{
+    margin-bottom: 1%;
+    line-height: 0.7rem;
+}
+/* div.login div.formligne .form-champ, form button{
+    display: inline-block;
+} */
+div.formligne{
+    width: 100%;
+}
+button.button-login{
+    padding: 5px 30px;
+    background: linear-gradient(180deg, #419FBB 0%, #237B97 100%);
+    border: none;
+}
+div.formligne input{
+    line-height: 1.5rem;
+}
+div.formligne input:first-child{
+    margin-right: 1%;
+}

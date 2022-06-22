@@ -1,0 +1,224 @@
+@media screen and (max-width:1480px) {
+    header .logo img#burgerderoule, header .logo img{
+        display: inline-block;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav :not(img, span > *), header form, header .logo:nth-child(2){
+        display: none;
+    }
+    header nav{
+        width: 17%;
+    }
+    header nav span{
+        display: inline-block;
+    }
+    header .logo{
+        width: 62%;
+    }
+    section{
+        padding: 0;
+    }
+    /* section.banniere{
+        background-position-x: 86%;
+        height: 24vh;
+    } */
+    section.banniere{
+        background-position-x: 97% ;
+        height: 73vh ;
+    }
+
+    header .logo img:last-child:focus .responsiveburger{
+        display: block;
+    }
+
+    /* menu deroule */
+
+    header .container .logo img#burgerderoule{
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .responsivederoule a{
+        width: 80%;
+        margin: auto;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 700;
+    }
+    
+    /* cache le checkboox */
+    #expand-toggle {
+        display: none;
+    }
+      
+    /* cache le contenu du menu deroule */
+    .responsivederoule {
+        visibility: collapse;
+        background-color: #c4c4c4;
+        width: 88%;
+        height: 12vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding-top: 1%;
+        /* 
+        margin-top: 0;
+        opacity: 0; 
+        Propriété de l'ancienne transition */
+
+        margin-top: 73px;
+        
+    }
+    
+    /* bouton clickable */
+    #expand-btn {
+        display: inline-block;
+        padding: 5px 11px;
+        background: url(/img/burger_icon.svg) no-repeat;
+        background-size: cover;
+        height: 30px;
+        width: 30px;
+    }
+    
+    /* condition sur le bouton pour afficher le contenu du menu deroule */
+    #expand-toggle:checked ~ * .responsivederoule {
+        visibility: visible;
+        animation-name: fadeInDown;
+        animation-timing-function: ease-in-out;
+        animation-duration: 450ms;
+        /* 
+        transition: margin-top .4s ease-in-out, opacity 300ms ease-out 0.1s;
+        margin-top: 73px;
+        opacity: 1;
+        Ancienne transition */
+
+    }
+    
+    /* apparence du bouton checked */
+    #expand-toggle:checked ~ #expand-btn {
+        background-color: rgba(204, 204, 204, 0.11);
+    }
+
+    @keyframes fadeInDown {
+        0% {
+           opacity: 0;
+           transform: translateY(-20px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateY(0);
+        }
+     } 
+
+    /* */
+
+    .contain-gamme{
+        flex-direction: column;
+    }
+    .gamme{
+        width: 100%;
+    }
+
+    section.login-responsive{
+        display: block;
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+        text-align: center;
+    }
+
+    section.login-responsive form{
+        display: flex;
+        flex-direction: column;
+    }
+    section.login-responsive input{
+        padding: 9px 10px 9px 10px;
+        background-color: #E2E2E2;
+        border: none;
+        margin-bottom: 5%;
+        font-family: 'Josefin Sans';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+    section.login-responsive .bouton{
+        font-weight: 600;
+    }
+
+    section.login-responsive h3{
+        margin-bottom: 2vh;
+        font-weight: 400;
+    }
+
+    section.location{
+        margin-bottom: 5%;
+    }
+
+    .location h5{
+        text-align: center;
+    }
+    .location .boxes {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .premier .second .troisieme{
+        width: 47%;
+    }
+    .location .box figure{
+        flex-direction: column;
+    }
+    .location .box figure img{
+        width: 112%;
+        margin-left: -6%;
+        padding-bottom: 3%;
+    }
+
+    .second h4{
+        padding-top: 3%;
+        padding-bottom: 10%;
+    }
+
+    .second .form input{
+    padding-right: 30%;
+    margin: auto;
+    margin-bottom: 1%;
+    }
+
+    .second .bouton{
+        margin-top: 2%;
+    }
+
+    .quatrieme figure p{
+        width: 100%;
+    }
+
+    footer{
+        margin-top: 13%;
+    }
+    footer .contain-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .contain-footer .trouver:first-child{
+        margin-top: 5%;
+    }
+    footer .contain-footer .trouver{
+        width: 60%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+}
+@media screen and (max-width:490px) {
+
+    section.banniere{
+       background-position-x: 86% ;
+       height: 24vh ;
+   }
+}
